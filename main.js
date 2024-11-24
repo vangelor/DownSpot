@@ -70,7 +70,7 @@ async function downloadVideo(videoname, artistname, downloadDir) {
             toPipeableStream(stream).pipe(fs.createWriteStream(path.join(downloadDir, `./${artistname} - ${safeVideoName}`)))
         });
 
-        await sleep(1000);
+        await sleep(1500);
 
         await convertAudio(safeVideoName, artistname, downloadDir);
 
