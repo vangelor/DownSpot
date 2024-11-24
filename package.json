@@ -1,0 +1,25 @@
+{
+  "name": "downspot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Victor Angelo",
+  "license": "ISC",
+  "description": "A spotify playlist downloader",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ybd-project/ytdl-core": "^6.0.8",
+    "fluent-ffmpeg": "^2.1.3",
+    "os": "^0.1.2",
+    "sleep-promise": "^9.1.0",
+    "spotify-web-api-node": "^5.0.2",
+    "yt-search": "^2.12.1"
+  }
+}
