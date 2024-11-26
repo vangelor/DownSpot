@@ -11,6 +11,7 @@ cd DownSpot
 npm install
 
 npm install --save-dev @electron-forge/cli
+
 npm exec --package=@electron-forge/cli -c "electron-forge import"
 
 You might need to install fakerootS
@@ -24,6 +25,7 @@ cd out/downspot-linux-x64/  (if your linux has x64 architecture)
 In this folder there will be a executable called downspot
 
 You can use it inside this folder or change it's place
+
 
 On mac:
 
