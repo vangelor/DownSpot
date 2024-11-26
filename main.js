@@ -4,13 +4,14 @@ const path = require('path');
 const { YtdlCore, toPipeableStream } = require('@ybd-project/ytdl-core');
 const ytSearch = require('yt-search');
 const SpotifyWebApi = require('spotify-web-api-node');
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path.replace('app.asar', 'app.asar.unpacked');
 const ffmpeg = require('fluent-ffmpeg');
 const sleep = require('sleep-promise');
 const os = require('os');
 
+ffmpeg.setFfmpegPath(ffmpegPath);
+
 const ytdl = new YtdlCore({});
-
-
 
 //creates directory to store the songs if it doesn't exist
 function checkDir(downloadDir) {
